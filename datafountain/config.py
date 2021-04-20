@@ -1,0 +1,15 @@
+MODEL_NAME = './chinese_roberta_wwm_large_ext_L-24_H-1024_A-16/'
+MODEL_PATH = './chinese_roberta_wwm_large_ext_L-24_H-1024_A-16/'
+
+MAX_LEN = 30
+TRAIN_BATCH_SIZE = 20
+VALID_BATCH_SIZE = 4
+TEST_BATCH_SIZE = 4
+EPOCHS = 5
+LEARNING_RATE = 3e-5
+EVAL_EVERY_N_STEPS = 100
+DROP_OUT = 0.3
+EARLY_STOP_ROUND = 3
+SAVE_ACC = 0.7
+NUM_CLASS = 1 #二分类
+
