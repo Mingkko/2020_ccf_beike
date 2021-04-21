@@ -1,15 +1,26 @@
-MODEL_NAME = './chinese_roberta_wwm_large_ext_L-24_H-1024_A-16/'
-MODEL_PATH = './chinese_roberta_wwm_large_ext_L-24_H-1024_A-16/'
-
-MAX_LEN = 30
-TRAIN_BATCH_SIZE = 20
+# MODEL_NAME = './chinese_xlnet_mid_L-24_H-768_A-12/'
+# MODEL_PATH = './chinese_xlnet_mid_L-24_H-768_A-12/'
+# MODEL_NAME='./bert-base-chinese/'
+# MODEL_PATH='./bert-base-chinese/'
+# MODEL_NAME = './chinese_roberta_wwm_large_ext_pytorch/'
+# MODEL_PATH = './chinese_roberta_wwm_large_ext_pytorch/'
+# MODEL_NAME = './chinese_wobert_L-12_H-768_A-12/chinese_wobert_L-12_H-768_A-12/'
+# MODEL_PATH = './chinese_wobert_L-12_H-768_A-12/chinese_wobert_L-12_H-768_A-12/'
+MODEL_NAME = './chinese_mixed_bert_large_pytorch/'
+MODEL_PATH = './chinese_mixed_bert_large_pytorch/'
+MAX_LEN = 64
+TRAIN_BATCH_SIZE = 44
 VALID_BATCH_SIZE = 4
 TEST_BATCH_SIZE = 4
-EPOCHS = 5
-LEARNING_RATE = 3e-5
-EVAL_EVERY_N_STEPS = 100
-DROP_OUT = 0.3
+EPOCHS = 3
+LEARNING_RATE = 4e-5
+EVAL_EVERY_N_STEPS = 81
+DROP_OUT = 0.5  
 EARLY_STOP_ROUND = 3
-SAVE_ACC = 0.7
+SAVE_ACC = 0.78
 NUM_CLASS = 1 #二分类
-
+USE_CUDA = True
+ACCUMULATION_STEPS = 4
+clip_grad =2 #
+alpha = 0.25
+fp16 = 0
